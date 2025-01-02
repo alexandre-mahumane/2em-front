@@ -9,9 +9,7 @@ export default {
         "footer-background": "#515050", // Cinza escuro do footer
         "blue-bar": "#058DC4",
         gray: "#C6C6C6", // Cinza claro
-        "card-bg": {
-          radial: "radial-gradient(circle, #3A66A4 0%, #03367D 100%)", // Gradiente radial
-        },
+        "card-service": "radial-gradient(circle, #3A66A4 0%, #03367D 100%)", // Gradiente radial
       },
     },
   },
