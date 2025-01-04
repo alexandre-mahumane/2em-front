@@ -1,6 +1,7 @@
 import photo from "../assets/service banner.jpg";
 import { Banner } from "../components/banner";
 import { CardService } from "../components/card-service";
+import { Footer } from "../components/footer";
 import { Navbar } from "../components/navbar";
 export const Service = () => {
   return (
@@ -11,7 +12,7 @@ export const Service = () => {
       </div>
       <div className="space-y-40">
         <div className="bg-main-blue">
-          <section className="mx-auto py-10 w-full max-w-7xl">
+          <section className="mx-auto py-14 w-full max-w-7xl">
             <section className="flex justify-center space-x-8">
               <CardService variant={1} />
               <CardService variant={2} />
@@ -29,6 +30,7 @@ export const Service = () => {
           </p>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

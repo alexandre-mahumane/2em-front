@@ -4,6 +4,7 @@ import { Card } from "../components/description-card";
 import { Navbar } from "../components/navbar-home";
 import photo from "../assets/photo2.jpg";
 import { CardBlog } from "../components/card-blog";
+import { Footer } from "../components/footer";
 
 export const Home = () => {
   const valuePropositions = [
@@ -21,7 +22,7 @@ export const Home = () => {
     <>
       <Navbar />
       <Banner />
-      <section className="space-y-32 flex flex-col items-center mt-20 max-w-7xl mx-auto px-6">
+      <section className="space-y-32 flex flex-col items-center py-14 max-w-7xl mx-auto px-6">
         <Card />
         <div className="w-full text-center">
           <h2 className="font-bold mb-14 text-2xl leading-snug">
@@ -47,6 +48,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
