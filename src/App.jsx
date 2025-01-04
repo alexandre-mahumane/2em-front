@@ -1,7 +1,13 @@
-function App() {
-  const [count, setCount] = useState(0);
+import { RouterProvider } from "react-router-dom";
 
-  return <></>;
+import { routes } from "./router";
+
+function App() {
+  return (
+    <>
+      <RouterProvider router={routes} />
+    </>
+  );
 }
 
 export default App;
