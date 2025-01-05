@@ -1,7 +1,10 @@
+import { Navbar } from "../components/navbar";
+
 export const AboutUs = () => {
   return (
     <>
-      <h1>about us</h1>
+      <Navbar />
+      <h1>About us</h1>
     </>
   );
 };
