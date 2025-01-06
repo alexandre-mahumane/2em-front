@@ -1,4 +1,4 @@
-export const Card = ({ photo }) => {
+export const CardBlog = ({ photo }) => {
   return (
     <article className="flex mt-32 flex-col w-[28rem] h-96">
       <div className="h-full w-full object-cover">

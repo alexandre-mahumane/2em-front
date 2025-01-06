@@ -5,7 +5,7 @@ import photo from "../assets/photo4.jpg";
 export const Card = () => {
   return (
     <div className="flex flex-col sm:flex-row w-full space-y-6 sm:space-y-0 sm:space-x-10">
-      <div className="w-full sm:w-3/6 h-72">
+      <div className="w-full sm:w-3/6 h-96">
         <img
           className="w-full h-full object-cover rounded-lg"
           src={photo}
