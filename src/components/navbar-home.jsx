@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ scroll }) => {
+  const [scrollY, setScrollY] = useState(scroll);
+  const customHover = "";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const links = [
     { name: "Home", path: "/" },
     { name: "A Empresa", path: "/about-us" },
@@ -11,7 +25,11 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 flex bg-white shadow-md items-center w-full h-20 z-50 transition-all duration-300">
+    <div
+      className={`fixed flex items-center w-full h-20 z-50 transition-all duration-300 ${
+        scrollY > 0 ? "bg-white shadow-md" : "bg-transparent text-white"
+      }`}
+    >
       <nav className="flex w-full text-xl justify-between mx-auto max-w-7xl">
         <div>
           <Link to="/" className="font-bold text-3xl">
@@ -42,7 +60,7 @@ export const Navbar = () => {
                 <div
                   className={`h-[0.1rem] min-w-full transition-all ${
                     isHovered || window.location.pathname === link.path
-                      ? "bg-blue-bar"
+                      ? `${scrollY > 0 ? "bg-blue-bar" : "bg-white"}`
                       : ""
                   }`}
                 ></div>

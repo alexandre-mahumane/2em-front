@@ -1,7 +1,12 @@
+import { Banner } from "../components/banner";
+import { Navbar } from "../components/navbar";
+import photo from "../assets/contact banner.jpg";
+
 export const Contact = () => {
   return (
     <>
-      <h1>Contact</h1>
+      <Navbar />
+      <Banner title={"Contato"} photo={photo} text={"Fale conosco"} />
     </>
   );
 };
