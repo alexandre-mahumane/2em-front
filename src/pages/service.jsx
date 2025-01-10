@@ -3,6 +3,7 @@ import { Banner } from "../components/banner";
 import { CardService } from "../components/card-service";
 import { Footer } from "../components/footer";
 import { Navbar } from "../components/navbar";
+import { SocialMidia } from "../components/social-midia";
 export const Service = () => {
   return (
     <>
@@ -31,6 +32,7 @@ export const Service = () => {
         </section>
       </div>
       <Footer />
+      <SocialMidia />
     </>
   );
 };

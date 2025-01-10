@@ -4,6 +4,7 @@ import photo from "../assets/company banner.jpg";
 import { CardCompany } from "../components/card-company";
 import { CardAboutUs } from "../components/card-about-us";
 import { Footer } from "../components/footer";
+import { SocialMidia } from "../components/social-midia";
 
 export const AboutUs = () => {
   return (
@@ -22,6 +23,7 @@ export const AboutUs = () => {
         <CardAboutUs title={"Proposito"} text={"text"} />
       </section>
       <Footer />
+      <SocialMidia />
     </>
   );
 };

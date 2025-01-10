@@ -5,6 +5,7 @@ import { Navbar } from "../components/navbar-home";
 import photo from "../assets/photo2.jpg";
 import { CardBlog } from "../components/card-blog";
 import { Footer } from "../components/footer";
+import { SocialMidia } from "../components/social-midia";
 
 export const Home = () => {
   const valuePropositions = [
@@ -49,6 +50,7 @@ export const Home = () => {
         </div>
       </section>
       <Footer />
+      <SocialMidia />
     </>
   );
 };

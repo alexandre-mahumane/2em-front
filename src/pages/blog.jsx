@@ -2,6 +2,7 @@ import { CardBlog } from "../components/card-blog";
 import { Navbar } from "../components/navbar";
 import photo from "../assets/photo2.jpg";
 import { Footer } from "../components/footer";
+import { SocialMidia } from "../components/social-midia";
 export const Blog = () => {
   return (
     <>
@@ -14,6 +15,7 @@ export const Blog = () => {
         <CardBlog photo={photo} />
       </div>
       <Footer />
+      <SocialMidia />
     </>
   );
 };

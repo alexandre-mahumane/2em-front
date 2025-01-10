@@ -1,4 +1,4 @@
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -26,8 +26,34 @@ export const Footer = () => {
 
         <div className="w-1/5">
           <h5 className={textStyle}>Contate-nos</h5>
-          <p>facebook</p>
-          <p>Linkedin</p>
+          <div className="space-y-4">
+            {/* Facebook */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-3"
+              aria-label="Visit our Facebook page"
+            >
+              <div className="bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
+                <FaFacebookF size={20} className="text-blue-600" />
+              </div>
+              <span className="text-gray-700 font-medium">Facebook</span>
+            </a>
+            {/* LinkedIn */}
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-3"
+              aria-label="Visit our LinkedIn page"
+            >
+              <div className="bg-white p-3 rounded-full shadow-lg flex items-center justify-center">
+                <FaLinkedinIn size={20} className="text-blue-500" />
+              </div>
+              <span className="text-gray-700 font-medium">LinkedIn</span>
+            </a>
+          </div>
         </div>
         <div className="w-1/5">
           <h5 className={textStyle}>Navegue</h5>
