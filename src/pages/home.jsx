@@ -6,6 +6,7 @@ import photo from "../assets/photo2.jpg";
 import { CardBlog } from "../components/card-blog";
 import { Footer } from "../components/footer";
 import { SocialMidia } from "../components/social-midia";
+import { motion } from "motion/react";
 
 export const Home = () => {
   const valuePropositions = [
@@ -18,6 +19,17 @@ export const Home = () => {
       text: "A 2 EM Consulting é mais do que uma consultoria – somos parceiros estratégicos que impulsionam o crescimento sustentável de PMEs no continente africano. Oferecemos serviços especializados em assessoria legal, financeira e treinamento, ajudando empresas a navegar no cenário empresarial com segurança e assertividade. Nossa essência se traduz em confiança, experiência e conexão local.",
     },
   ];
+
+  const renderMotionCard = (photo, delay) => (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: delay }}
+      viewport={{ once: true }}
+    >
+      <CardBlog photo={photo} />
+    </motion.div>
+  );
 
   return (
     <>
@@ -41,11 +53,11 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <h2 className="font-bold text-2xl leading-snug mb-12">Nosso Blog</h2>
-          <div className="flex flex-wrap justify-center gap-10 w-full">
-            <CardBlog photo={photo} />
-            <CardBlog photo={photo} />
-            <CardBlog photo={photo} />
-            <CardBlog photo={photo} />
+          <div className="flex flex-wrap justify-center gap-4 w-full">
+            {renderMotionCard(photo, 0.5)}
+            {renderMotionCard(photo, 0.7)}
+            {renderMotionCard(photo, 1)}
+            {renderMotionCard(photo, 1.3)}
           </div>
         </div>
       </section>

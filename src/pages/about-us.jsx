@@ -5,8 +5,18 @@ import { CardCompany } from "../components/card-company";
 import { CardAboutUs } from "../components/card-about-us";
 import { Footer } from "../components/footer";
 import { SocialMidia } from "../components/social-midia";
-
+import { motion } from "motion/react";
 export const AboutUs = () => {
+  const renderMotionCard = (title, text, delay) => (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: delay }}
+      viewport={{ once: true }}
+    >
+      <CardAboutUs title={title} text={text} />
+    </motion.div>
+  );
   return (
     <>
       <section>
@@ -18,9 +28,9 @@ export const AboutUs = () => {
         <CardCompany />
       </section>
       <section className="mx-auto flex justify-center gap-6 w-full max-w-7xl">
-        <CardAboutUs title={"Missão"} text={"text"} />
-        <CardAboutUs title={"Valores"} text={"text"} />
-        <CardAboutUs title={"Proposito"} text={"text"} />
+        {renderMotionCard("Missão", "text", 0.5)}
+        {renderMotionCard("Valores", "text", 1)}
+        {renderMotionCard("Proposito", "text", 1.5)}
       </section>
       <Footer />
       <SocialMidia />
