@@ -2,12 +2,12 @@ export const InputsContact = () => {
   const style = "outline-none py-1 px-4 bg-gray rounded-md w-full";
   const textStyle = "font-semibold text-lg";
   return (
-    <form className="w-1/2 space-y-6">
+    <form className="md:w-1/2 w-full space-y-6">
       <div>
         <h5 className={textStyle}>Nome</h5>
         <input className={`${style} `} type="text" name="name" />
       </div>
-      <div className="flex space-x-4 w-full">
+      <div className="flex md:flex-row flex-col space-y-6 md:space-y-0 md:space-x-4 w-full">
         <div className="w-full">
           <h5 className={textStyle}>Email</h5>
           <input className={`${style} `} type="email" name="email" />

@@ -13,14 +13,14 @@ export const Contact = () => {
         <Navbar />
         <Banner title={"Contato"} photo={photo} text={"Fale conosco"} />
       </section>
-      <section className="mx-auto py-14 max-w-7xl">
+      <section className="mx-auto px-4 py-14 max-w-7xl">
         <h2 className="font-bold text-4xl leading-snug">
           Nós queremos ouvir você
         </h2>
         <p className="text-xl">
           Preencha as informações abaixo e deixe sua mensagem:
         </p>
-        <div className="flex space-x-4">
+        <div className="flex md:flex-row space-y-6 md:space-y-0 flex-col md:space-x-4">
           <InputsContact />
           <Location />
         </div>
