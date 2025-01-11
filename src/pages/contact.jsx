@@ -14,10 +14,10 @@ export const Contact = () => {
         <Banner title={"Contato"} photo={photo} text={"Fale conosco"} />
       </section>
       <section className="mx-auto py-14 max-w-7xl">
-        <h2 className="font-bold text-2xl leading-snug">
+        <h2 className="font-bold text-4xl leading-snug">
           Nós queremos ouvir você
         </h2>
-        <p className="text-lg">
+        <p className="text-xl">
           Preencha as informações abaixo e deixe sua mensagem:
         </p>
         <div className="flex space-x-4">

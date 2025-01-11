@@ -7,6 +7,24 @@ import { Footer } from "../components/footer";
 import { SocialMidia } from "../components/social-midia";
 import { motion } from "motion/react";
 export const AboutUs = () => {
+  const companyInfo = [
+    {
+      title: "Missão",
+      text: "A nossa missão é capacitar PMEs africanas com soluções legais e financeiras que promovem o crescimento sustentável e o sucesso no mercado competitivo.",
+      delay: 0.5,
+    },
+    {
+      title: "Proposta de Valor",
+      text: "Oferecemos consultoria personalizada, baseada em confiança e experiência, ajudando as PMEs africanas a alcançar seu máximo potencial através de soluções estratégicas e práticas.",
+      delay: 1,
+    },
+    {
+      title: "Valores",
+      text: "Comprometemo-nos com a excelência, integridade, inovação e colaboração, mantendo sempre o foco em soluções que tragam impacto positivo e duradouro para nossos clientes.",
+      delay: 1.5,
+    },
+  ];
+
   const renderMotionCard = (title, text, delay) => (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
@@ -28,9 +46,9 @@ export const AboutUs = () => {
         <CardCompany />
       </section>
       <section className="mx-auto flex justify-center gap-6 w-full max-w-7xl">
-        {renderMotionCard("Missão", "text", 0.5)}
-        {renderMotionCard("Valores", "text", 1)}
-        {renderMotionCard("Proposito", "text", 1.5)}
+        {companyInfo.map((info) =>
+          renderMotionCard(info.title, info.text, info.delay)
+        )}
       </section>
       <Footer />
       <SocialMidia />

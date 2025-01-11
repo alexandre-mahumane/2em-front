@@ -37,8 +37,8 @@ export const Home = () => {
       <Banner />
       <section className="space-y-32 flex flex-col items-center py-14 max-w-7xl mx-auto px-6">
         <Card />
-        <div className="w-full text-center">
-          <h2 className="font-bold mb-14 text-2xl leading-snug">
+        <div className="w-full">
+          <h2 className="font-bold mb-14 text-4xl leading-snug">
             Nossa Proposta de Valor
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
@@ -52,7 +52,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="w-full">
-          <h2 className="font-bold text-2xl leading-snug mb-12">Nosso Blog</h2>
+          <h2 className="font-bold text-4xl leading-snug mb-12">Nosso Blog</h2>
           <div className="flex flex-wrap justify-center gap-4 w-full">
             {renderMotionCard(photo, 0.5)}
             {renderMotionCard(photo, 0.7)}

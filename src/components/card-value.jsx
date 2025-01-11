@@ -8,8 +8,8 @@ export const CardValue = ({ title, text }) => {
       viewport={{ once: true }}
       className=" w-[30rem] h-fit"
     >
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="text-lg">{text}</p>
+      <h3 className="text-2xl font-semibold">{title}</h3>
+      <p className="text-xl">{text}</p>
     </motion.div>
   );
 };

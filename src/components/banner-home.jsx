@@ -30,7 +30,7 @@ export const Banner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className=" font-semibold text-5xl w-72 flex-wrap"
+            className="font-semibold text-4xl sm:text-5xl w-full sm:w-72 flex-wrap"
           >
             Elevando o Potencial das PMEs Africanas.
           </motion.h2>

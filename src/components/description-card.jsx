@@ -28,10 +28,10 @@ export const Card = () => {
         viewport={{ once: true }}
         className="flex flex-col justify-center text-wrap w-full sm:w-1/2 flex-wrap space-y-4"
       >
-        <h2 className="font-bold text-2xl leading-snug">
+        <h2 className="font-bold text-5xl leading-snug">
           Você sabe o que precisa fazer para alcançar melhores resultados?
         </h2>
-        <p className="text-lg leading-relaxed">
+        <p className="text-xl leading-relaxed">
           Descubra o que juntos podemos fazer para desenvolver a Governança e a
           Gestão da sua empresa.
         </p>

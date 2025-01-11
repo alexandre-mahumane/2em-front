@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export const Navbar = ({ scroll }) => {
   const [scrollY, setScrollY] = useState(scroll);
@@ -26,17 +27,17 @@ export const Navbar = ({ scroll }) => {
 
   return (
     <div
-      className={`fixed flex items-center w-full h-20 z-50 transition-all duration-300 ${
+      className={`fixed flex items-center w-full h-24 z-50 transition-all duration-300 ${
         scrollY > 0 ? "bg-white shadow-md" : "bg-transparent text-white"
       }`}
     >
-      <nav className="flex w-full text-xl justify-between mx-auto max-w-7xl">
-        <div>
-          <Link to="/" className="font-bold text-3xl">
-            2em
+      <nav className="flex w-full h-full text-xl justify-between mx-auto max-w-7xl">
+        <div className="w-36  h-full">
+          <Link to="/">
+            <img src={logo} className="w-full h-full" alt="" />
           </Link>
         </div>
-        <ul className="flex space-x-10">
+        <ul className="flex items-center space-x-10">
           {links.map((link, index) => {
             const [isHovered, setIsHovered] = useState(false);
 

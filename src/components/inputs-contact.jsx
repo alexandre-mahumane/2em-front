@@ -1,6 +1,6 @@
 export const InputsContact = () => {
   const style = "outline-none py-1 px-4 bg-gray rounded-md w-full";
-  const textStyle = "font-semibold";
+  const textStyle = "font-semibold text-lg";
   return (
     <form className="w-1/2 space-y-6">
       <div>

@@ -2,10 +2,10 @@ import { FaArrowRight, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
-  const textStyle = "font-semibold";
+  const textStyle = "font-semibold text-xl";
 
   return (
-    <footer className="bg-footer-background mt-10 p-2 w-full text-white ">
+    <footer className="bg-footer-background texxt-lg mt-10 p-2 w-full text-white ">
       <div className="mx-auto max-w-7xl justify-around flex">
         <div className="w-1/5">
           <h5 className={textStyle}>Sobre Nós</h5>
@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
 
         <div className="w-1/5">
-          <h5 className={textStyle}>Contate-nos</h5>
+          <h5 className={textStyle}>Conecte-se com a gente</h5>
           <div className="space-y-4">
             {/* Facebook */}
             <a
@@ -74,6 +74,10 @@ export const Footer = () => {
               <Link to="/contact">contact</Link>
             </li>
           </ul>
+        </div>
+        <div>
+          <h5 className={textStyle}>Entre em Contato</h5>
+          <a href="tel:+">+258 8400000000</a>
         </div>
       </div>
     </footer>
