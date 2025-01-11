@@ -5,9 +5,9 @@ export const Footer = () => {
   const textStyle = "font-semibold text-xl";
 
   return (
-    <footer className="bg-footer-background texxt-lg mt-10 p-2 w-full text-white ">
-      <div className="mx-auto max-w-7xl justify-around flex">
-        <div className="w-1/5">
+    <footer className="bg-footer-background text-lg mt-10 p-2 w-full text-white ">
+      <div className="mx-auto max-w-7xl space-y-4 justify-around md:flex-row flex-col flex">
+        <div className="md:w-1/5 w-full">
           <h5 className={textStyle}>Sobre Nós</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
@@ -24,7 +24,7 @@ export const Footer = () => {
           </Link>
         </div>
 
-        <div className="w-1/5">
+        <div className="md:w-1/5 w-full">
           <h5 className={textStyle}>Conecte-se com a gente</h5>
           <div className="space-y-4">
             {/* Facebook */}
@@ -55,7 +55,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/5">
+        <div className="md:w-1/5 w-full">
           <h5 className={textStyle}>Navegue</h5>
           <ul>
             <li>
