@@ -8,6 +8,7 @@ const animation = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const DownArrowSvg = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -30,42 +31,43 @@ const DownArrowSvg = () => (
 export const Banner = ({ title, text, photo }) => {
   return (
     <div className="relative min-h-screen">
-      <div className="bg-main-blue bg-opacity-80 text-white h-full w-full absolute">
-        <div className="mx-auto w-full flex flex-col items-center justify-center h-full max-w-7xl">
-          <motion.h4
-            variants={animation(0)}
-            initial="hidden"
-            animate="visible"
-            viewport={{ once: true }}
-            className=" flex flex-col text-4xl items-center mt-4"
-          >
-            {title}
-          </motion.h4>
-          <motion.h3
-            variants={animation(1)}
-            initial="hidden"
-            animate="visible"
-            viewport={{ once: true }}
-            className="font-semibold text-6xl"
-          >
-            {" "}
-            {text}
-          </motion.h3>
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              duration: 0.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 1.5,
-            }}
-            className="mt-20"
-          >
-            <DownArrowSvg />
-          </motion.div>
-        </div>
+      {/* Background and content */}
+      <div className="bg-main-blue text-white absolute inset-0 z-10 flex flex-col items-center justify-center px-4 sm:px-8">
+        <motion.h4
+          variants={animation(0)}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true }}
+          className="text-xl sm:text-3xl lg:text-4xl text-center mt-4"
+        >
+          {title}
+        </motion.h4>
+        <motion.h3
+          variants={animation(1)}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true }}
+          className="font-semibold text-3xl sm:text-5xl lg:text-6xl text-center mt-2"
+        >
+          {text}
+        </motion.h3>
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 0.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5,
+          }}
+          className="mt-12 lg:mt-16"
+        >
+          <DownArrowSvg />
+        </motion.div>
       </div>
-      <img className="w-full" src={photo} alt="banner" />
+
+      <div className="absolute inset-0 z-0">
+        <img className="w-full h-full object-cover" src={photo} alt="banner" />
+      </div>
     </div>
   );
 };

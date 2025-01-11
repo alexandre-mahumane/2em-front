@@ -27,9 +27,9 @@ export const AboutUs = () => {
 
   const renderMotionCard = (title, text, delay) => (
     <motion.div
-      initial={{ opacity: 0, x: 50 }}
+      initial={{ opacity: 0, x: 20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: delay }}
+      transition={{ duration: 4, delay }}
       viewport={{ once: true }}
     >
       <CardAboutUs title={title} text={text} />

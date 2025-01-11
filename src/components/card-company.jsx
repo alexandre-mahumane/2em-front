@@ -26,8 +26,8 @@ export const CardCompany = () => {
         </div>
       </div>
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 4, x: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
         viewport={{ once: true }}
         className="sm:absolute sm:right-20 w-full sm:w-2/6 h-80 object-cover "

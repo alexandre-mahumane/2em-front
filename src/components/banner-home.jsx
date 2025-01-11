@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import photo from "../assets/photo3.jpg";
 import { motion } from "framer-motion";
+
 const ArrowSvg = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,19 +24,20 @@ const ArrowSvg = () => (
 export const Banner = () => {
   return (
     <div className="relative min-h-screen">
-      <div className="bg-main-blue bg-opacity-80 text-white h-full w-full absolute">
-        <div className="mx-auto w-full flex flex-col justify-center h-full max-w-7xl">
+      {/* Overlay and content */}
+      <div className="bg-main-blue bg-opacity-80 text-white absolute inset-0 z-10 flex flex-col justify-center px-6 sm:px-8">
+        <div className="mx-auto w-full max-w-7xl">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="font-semibold text-4xl sm:text-5xl w-full sm:w-72 flex-wrap"
+            className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-full sm:max-w-2xl flex-wrap leading-tight"
           >
             Elevando o Potencial das PMEs Africanas.
           </motion.h2>
           <Link
-            className="animate__animated animate__fadeIn animate__delay-1s font-extralight flex text-lg items-center"
+            className="mt-6 flex items-center gap-3 text-lg sm:text-xl font-light animate__animated animate__fadeIn animate__delay-1s"
             to={"/contact"}
             aria-label="Fale com um especialista"
           >
@@ -44,7 +46,11 @@ export const Banner = () => {
           </Link>
         </div>
       </div>
-      <img className="w-full" src={photo} alt="banner" />
+
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img className="w-full h-full object-cover" src={photo} alt="banner" />
+      </div>
     </div>
   );
 };
