@@ -1,6 +1,6 @@
 export const CardBlog = ({ photo }) => {
   return (
-    <article className=" flex  flex-col w-[28rem] h-96">
+    <article className=" flex  flex-col md:w-[28rem] h-fit p-4 md:p-0 md:h-96">
       <div className="h-full w-full object-cover">
         <img src={photo} alt="photo" />
       </div>

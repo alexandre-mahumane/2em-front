@@ -19,7 +19,7 @@ export const Blog = () => {
     <>
       <Navbar />
 
-      <div className="flex gap-4  py-28 justify-center flex-wrap max-w-7xl mx-auto">
+      <div className="flex gap-4 w-full py-28 justify-center flex-wrap max-w-7xl mx-auto">
         {renderMotionCard(photo)}
         {renderMotionCard(photo)}
         {renderMotionCard(photo)}
