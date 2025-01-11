@@ -26,7 +26,7 @@ export const Card = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.4 }}
         viewport={{ once: true }}
-        className="flex flex-col justify-center text-wrap w-full sm:w-1/2 flex-wrap space-y-4"
+        className="flex flex-col justify-center text-wrap w-full sm:w-1/2 flex-wrap  sm:space-y-4"
       >
         <h2 className="font-bold text-5xl leading-snug">
           Você sabe o que precisa fazer para alcançar melhores resultados?
