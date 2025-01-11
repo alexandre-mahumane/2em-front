@@ -41,15 +41,16 @@ export const AboutUs = () => {
         <Navbar />
         <Banner title={"A Empresa"} photo={photo} text={"Nossa Essência "} />
       </section>
-      <div className="space-y-40"></div>
-      <section className="mx-auto flex justify-center w-full py-14 max-w-7xl">
-        <CardCompany />
-      </section>
-      <section className="mx-auto flex justify-center gap-6 w-full max-w-7xl">
-        {companyInfo.map((info) =>
-          renderMotionCard(info.title, info.text, info.delay)
-        )}
-      </section>
+      <div className="px-4 sm:px-0">
+        <section className="mx-auto flex justify-center w-full py-14 max-w-7xl">
+          <CardCompany />
+        </section>
+        <section className="mx-auto flex  flex-col justify-center gap-6 w-full max-w-7xl">
+          {companyInfo.map((info) =>
+            renderMotionCard(info.title, info.text, info.delay)
+          )}
+        </section>
+      </div>
       <Footer />
       <SocialMidia />
     </>

@@ -4,9 +4,9 @@ import photo from "../assets/photo4.jpg";
 import { motion } from "motion/react";
 export const CardCompany = () => {
   return (
-    <div className="flex items-center">
-      <div className="bg-main-blue justify-between relative flex flex-col mr-32 w-2/3 px-32 py-8 h-96">
-        <div className="w-4/5">
+    <div className="flex md:flex-row space-y-6 sm:space-y-0 mx-auto w-full max-w-7xl flex-col items-center">
+      <div className="bg-main-blue justify-between sm:relative flex flex-col sm:mr-32  sm:w-2/3 px-6 sm:px-32 py-8 sm:h-96">
+        <div className="md:w-4/5 w-full">
           <h3 className="font-semibold text-5xl">Sobre a Empresa</h3>
           <p className="text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -30,7 +30,7 @@ export const CardCompany = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
         viewport={{ once: true }}
-        className="absolute right-20 w-2/6 h-80 object-cover "
+        className="sm:absolute sm:right-20 w-full sm:w-2/6 h-80 object-cover "
       >
         <img className="w-full  h-full" src={photo} alt="people" />
       </motion.div>
