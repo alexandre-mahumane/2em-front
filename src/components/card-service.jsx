@@ -10,7 +10,7 @@ export const CardService = ({ variant }) => {
         ease: "easeIn",
       }}
       viewport={{ once: true }}
-      className={`shadow-lg flex flex-col w-1/2 p-8 px-14 h-96 ${
+      className={`shadow-lg flex flex-col w-full sm:w-1/2 p-8 sm:px-14 sm:h-96 ${
         variant == 1 && "bg-blue-700 text-white"
       }  ${variant == 2 && "bg-white text-blue-700"}`}
     >
