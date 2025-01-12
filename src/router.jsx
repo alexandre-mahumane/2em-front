@@ -5,6 +5,7 @@ import { Contact } from "./pages/contact";
 import { Service } from "./pages/service";
 import { Home } from "./pages/home";
 import { NotFound } from "./pages/404-page";
+import { BlogInfo } from "./pages/blog-info";
 
 export const routes = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ export const routes = createBrowserRouter([
   {
     path: "/blog",
     element: <Blog />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/blog/:id",
+    element: <BlogInfo />,
     errorElement: <NotFound />,
   },
   {

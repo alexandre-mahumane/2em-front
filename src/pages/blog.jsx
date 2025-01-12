@@ -5,14 +5,14 @@ import { Footer } from "../components/footer";
 import { SocialMidia } from "../components/social-midia";
 import { motion } from "motion/react";
 export const Blog = () => {
-  const renderMotionCard = (photo) => (
+  const renderMotionCard = (photo, url) => (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <CardBlog photo={photo} />
+      <CardBlog photo={photo} url={url} />
     </motion.div>
   );
   return (
@@ -20,18 +20,18 @@ export const Blog = () => {
       <Navbar />
 
       <div className="flex gap-4 w-full py-28 justify-center flex-wrap max-w-7xl mx-auto">
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
-        {renderMotionCard(photo)}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
+        {renderMotionCard(photo, "blog/1")}
       </div>
       <Footer />
       <SocialMidia />

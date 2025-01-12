@@ -20,14 +20,14 @@ export const Home = () => {
     },
   ];
 
-  const renderMotionCard = (photo, delay) => (
+  const renderMotionCard = (photo, url, delay) => (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: delay }}
       viewport={{ once: true }}
     >
-      <CardBlog photo={photo} />
+      <CardBlog photo={photo} url={url} />
     </motion.div>
   );
 
@@ -54,10 +54,10 @@ export const Home = () => {
         <div className="w-full">
           <h2 className="font-bold text-4xl leading-snug mb-12">Nosso Blog</h2>
           <div className="flex flex-wrap justify-center gap-4 w-full">
-            {renderMotionCard(photo, 0.5)}
-            {renderMotionCard(photo, 0.7)}
-            {renderMotionCard(photo, 1)}
-            {renderMotionCard(photo, 1.3)}
+            {renderMotionCard(photo, "blog/1", 0.5)}
+            {renderMotionCard(photo, "blog/1", 0.7)}
+            {renderMotionCard(photo, "blog/1", 1)}
+            {renderMotionCard(photo, "blog/1", 1.3)}
           </div>
         </div>
       </section>
