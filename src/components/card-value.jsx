@@ -6,7 +6,7 @@ export const CardValue = ({ title, text }) => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 4 }}
       viewport={{ once: true }}
-      className="w-full sm:w-[30rem] h-fit"
+      className="w-full md:w-[30rem] h-fit"
     >
       <h3 className="text-2xl font-semibold">{title}</h3>
       <p className="text-xl">{text}</p>

@@ -5,14 +5,14 @@ import { motion } from "motion/react";
 
 export const Card = () => {
   return (
-    <div className="flex flex-col sm:flex-row w-full space-y-6 sm:space-y-0 sm:space-x-10">
+    <div className="flex flex-col md:flex-row w-full space-y-6 md:space-y-0 md:space-x-10">
       <motion.div
         animate={{ x: 0 }}
         initial={{ scale: 0.3 }}
         whileInView={{ scale: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
         viewport={{ once: true }}
-        className=" w-full sm:w-3/6 h-96"
+        className=" w-full md:w-3/6 h-96"
       >
         <img
           className="w-full h-full object-cover rounded-lg"
@@ -26,7 +26,7 @@ export const Card = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.4 }}
         viewport={{ once: true }}
-        className="flex flex-col justify-center text-wrap w-full sm:w-1/2 flex-wrap  sm:space-y-4"
+        className="flex flex-col justify-center text-wrap w-full md:w-1/2 flex-wrap  md:space-y-4"
       >
         <h2 className="font-bold text-5xl leading-snug">
           Você sabe o que precisa fazer para alcançar melhores resultados?

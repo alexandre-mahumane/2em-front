@@ -53,13 +53,11 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden bg-black  flex flex-col items-center justify-center space-y-1"
+          className="lg:hidden   flex flex-col items-center justify-center space-y-1"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span className="w-6 h-[2px] bg-gray-800"></span>
-          <span className="w-6 h-[2px] bg-gray-800"></span>
-          <span className="w-6 h-[2px] bg-gray-800"></span>
+          ☰
         </button>
       </nav>
 

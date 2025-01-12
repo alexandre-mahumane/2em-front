@@ -12,7 +12,7 @@ export const Home = () => {
   const valuePropositions = [
     {
       title: "Consultoria Legal e Financeira Personalizada para PMEs Africanas",
-      text: "Na 2 EM Consulting, capacitamos pequenas e médias empresas africanas a alcançar novos patamares de crescimento e estabilidade. Inspirados pela grandiosidade do Monte Kilimanjaro, oferecemos consultoria legal e financeira estratégica, conectando empresas com soluções personalizadas que refletem confiança, profissionalismo e um profundo entendimento do mercado africano.",
+      text: "Na 2 EM Consulting, capacitamos pequenas e médias empresas africanas a alcançar novos patamares de crescimento e estabilidade. Inspirados pela grandiosidade do Monte Kilimanjaro, oferecemos consultoria legal e financeira estratégica, conectando empresas com soluções personalizadas que refletem confiança, profissionalimdo e um profundo entendimento do mercado africano.",
     },
     {
       title: "Elevando o Potencial das PMEs Africanas",
@@ -35,13 +35,13 @@ export const Home = () => {
     <>
       <Navbar />
       <Banner />
-      <section className="space-y-10 sm:space-y-32 flex flex-col items-center py-14 max-w-7xl mx-auto px-6">
+      <section className="space-y-10 md:space-y-32 flex flex-col items-center py-14 max-w-7xl mx-auto px-6">
         <Card />
         <div className="w-full">
           <h2 className="font-bold mb-14 text-4xl leading-snug">
             Nossa Proposta de Valor
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 w-full">
             {valuePropositions.map((value) => (
               <CardValue
                 key={value.title}

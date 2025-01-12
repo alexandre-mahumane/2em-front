@@ -41,7 +41,7 @@ export const AboutUs = () => {
         <Navbar />
         <Banner title={"A Empresa"} photo={photo} text={"Nossa Essência "} />
       </section>
-      <div className="px-4 sm:px-0">
+      <div className="px-4 md:px-0">
         <section className="mx-auto flex justify-center w-full py-14 max-w-7xl">
           <CardCompany />
         </section>

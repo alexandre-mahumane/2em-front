@@ -26,17 +26,17 @@ export const Service = () => {
         <Navbar />
         <Banner title={"Serviços"} photo={photo} text={"Nossos Serviços"} />
       </div>
-      <div className="space-y-10 sm:space-y-40">
+      <div className="space-y-10 md:space-y-40">
         <div className="bg-main-blue">
-          <section className="mx-auto  px-6 sm:px-0 py-14 w-full max-w-7xl">
-            <section className="flex sm:flex-row space-y-6 sm:space-y-0 flex-col justify-center sm:space-x-8">
+          <section className="mx-auto  px-6 lg:px-0 py-14 w-full max-w-7xl">
+            <section className="flex md:flex-row space-y-6 md:space-y-0 flex-col justify-center md:space-x-8">
               <CardService variant={1} />
               <CardService variant={2} />
             </section>
           </section>
         </div>
 
-        <section className="mx-auto px-6 sm:px-0 max-w-7xl">
+        <section className="mx-auto px-6 lg:px-0 max-w-7xl">
           <motion.h2
             variants={renderMotion(0)}
             initial="hidden"
