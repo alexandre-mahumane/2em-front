@@ -14,8 +14,8 @@ export const BlogInfo = () => {
         <Navbar />
         <Banner
           photo={photo}
-          title={"titulodckkdkdkekeee"}
-          category={"tedfkkdkkkekdkech"}
+          title={"title"}
+          category={"category"}
           author={"Mahumane"}
           data={"28 de outubro de 2024"}
         />
