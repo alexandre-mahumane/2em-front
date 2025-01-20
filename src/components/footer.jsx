@@ -10,10 +10,10 @@ export const Footer = () => {
         <div className="md:w-1/5 w-full">
           <h5 className={textStyle}>Sobre Nós</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            deleniti aspernatur nam rem ipsa sit autem at omnis. Natus fugit
-            similique rerum excepturi eaque iusto, ratione facilis porro
-            doloribus ducimus?
+            A 2 EM Consulting inspira-se no Monte Kilimanjaro para ajudar PMEs
+            africanas a alcançarem o sucesso, oferecendo soluções legais e
+            financeiras personalizadas para superar desafios e gerar crescimento
+            sustentável. Fundada por Elónia Mahumane e Elcídio Macitela...
           </p>
           <Link
             className="text-link-text font-medium flex items-center space-x-2"

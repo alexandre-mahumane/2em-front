@@ -7,7 +7,7 @@ import { CardBlog } from "../components/card-blog";
 import { Footer } from "../components/footer";
 import { SocialMidia } from "../components/social-midia";
 import { motion } from "motion/react";
-
+import data from "../data";
 export const Home = () => {
   const valuePropositions = [
     {
@@ -20,14 +20,14 @@ export const Home = () => {
     },
   ];
 
-  const renderMotionCard = (photo, url, delay) => (
+  const renderMotionCard = (photo, url, categoria, text, delay) => (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: delay }}
       viewport={{ once: true }}
     >
-      <CardBlog photo={photo} url={url} />
+      <CardBlog photo={photo} url={url} categoria={categoria} text={text} />
     </motion.div>
   );
 
@@ -54,10 +54,14 @@ export const Home = () => {
         <div className="w-full">
           <h2 className="font-bold text-4xl leading-snug mb-12">Nosso Blog</h2>
           <div className="flex flex-wrap justify-center gap-4 w-full">
-            {renderMotionCard(photo, "blog/1", 0.5)}
-            {renderMotionCard(photo, "blog/1", 0.7)}
-            {renderMotionCard(photo, "blog/1", 1)}
-            {renderMotionCard(photo, "blog/1", 1.3)}
+            {data.map((item) =>
+              renderMotionCard(
+                item.photo,
+                `blog/${item.link}`,
+                item.categoria,
+                item.titulo
+              )
+            )}
           </div>
         </div>
       </section>

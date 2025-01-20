@@ -13,7 +13,7 @@ export const Banner = ({ title, category, photo, author, data }) => {
   return (
     <div className="relative min-h-screen">
       {/* Background overlay and content */}
-      <div className="bg-main-blue flex items-center justify-center text-white absolute inset-0 z-10 ">
+      <div className="bg-main-blue flex items-center justify-center text-black absolute inset-0 z-10 ">
         <motion.div
           variants={animation(0)}
           initial="hidden"
@@ -27,7 +27,7 @@ export const Banner = ({ title, category, photo, author, data }) => {
           <h3 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center mt-2">
             {title}
           </h3>
-          <div className=" mt-14 space-x-10  flex justify-between text-white text-base sm:text-lg">
+          <div className=" mt-14 space-x-10  flex justify-between text-black text-base sm:text-lg">
             <p className="truncate">{author}</p>
             <p>{data}</p>
           </div>

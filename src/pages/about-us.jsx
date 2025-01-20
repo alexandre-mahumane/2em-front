@@ -10,17 +10,17 @@ export const AboutUs = () => {
   const companyInfo = [
     {
       title: "Missão",
-      text: "A nossa missão é capacitar PMEs africanas com soluções legais e financeiras que promovem o crescimento sustentável e o sucesso no mercado competitivo.",
+      text: "Ser a maior alavanca de crescimento sustentável para as PMEs africanas, oferecendo soluções legais e financeiras personalizadas.",
       delay: 0.5,
     },
     {
       title: "Proposta de Valor",
-      text: "Oferecemos consultoria personalizada, baseada em confiança e experiência, ajudando as PMEs africanas a alcançar seu máximo potencial através de soluções estratégicas e práticas.",
+      text: "Fornecer soluções legais e financeiras personalizadas para impulsionar o crescimento sustentável das Pequenas e Médias Empresas (PMEs) no continente africano.",
       delay: 1,
     },
     {
       title: "Valores",
-      text: "Comprometemo-nos com a excelência, integridade, inovação e colaboração, mantendo sempre o foco em soluções que tragam impacto positivo e duradouro para nossos clientes.",
+      text: "Agimos com transparência e ética em todas as relações buscando sempre os mais altos padrões de qualidade nos serviços prestados trabalhamos em parceria com os clientes para encontrar as melhores soluções promovendo ideias criativas e estratégias que gerem valor real e contribuindo para o desenvolvimento social e econômico das comunidades atendidas",
       delay: 1.5,
     },
   ];
@@ -45,7 +45,7 @@ export const AboutUs = () => {
         <section className="mx-auto flex justify-center w-full py-14 max-w-7xl">
           <CardCompany />
         </section>
-        <section className="mx-auto flex  flex-col justify-center gap-6 w-full max-w-7xl">
+        <section className="mx-auto flex md:flex-row flex-col justify-center gap-6 w-full max-w-7xl">
           {companyInfo.map((info) =>
             renderMotionCard(info.title, info.text, info.delay)
           )}

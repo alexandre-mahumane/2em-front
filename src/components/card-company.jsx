@@ -5,14 +5,16 @@ import { motion } from "motion/react";
 export const CardCompany = () => {
   return (
     <div className="flex md:flex-row space-y-6 md:space-y-0 mx-auto w-full max-w-7xl flex-col items-center">
-      <div className="bg-main-blue justify-between md:relative flex flex-col md:mr-32  md:w-2/3 px-6 md:px-32 py-8 md:h-96">
+      <div className="bg-main-blue justify-between md:relative flex flex-col md:mr-32  md:w-2/3 px-6 md:px-32 py-8 md:h-[25rem]">
         <div className="md:w-4/5 w-full">
           <h3 className="font-semibold text-5xl">Sobre a Empresa</h3>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            doloribus blanditiis sit reiciendis! Exercitationem quidem molestiae
-            nemo eaque magnam, id nihil ipsam quod, labore, quo sequi eum
-            laboriosam deleniti ducimus? Lorem ipsum
+            A 2 EM Consulting inspira-se no Monte Kilimanjaro para ajudar PMEs
+            africanas a alcançarem o sucesso, oferecendo soluções legais e
+            financeiras personalizadas para superar desafios e gerar crescimento
+            sustentável. Fundada por Elónia Mahumane e Elcídio Macitela, a
+            empresa atua como parceira comprometida em promover prosperidade,
+            com integridade, excelência e inovação como pilares fundamentais.
           </p>
         </div>
         <div>
