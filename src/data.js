@@ -3,12 +3,22 @@ import blog2 from "../src/assets/blog2.webp";
 import blog3 from "../src/assets/blog3.webp";
 import blog4 from "../src/assets/blog4.webp";
 import blog5 from "../src/assets/blog5.webp";
+import author from "../src/assets/author.jpg";
 
 const data = [
   {
     categoria: "Gestão Empresarial",
     link: "Gestão-Empresarial",
     photo: blog1,
+    author: [
+      {
+        name: "Elónia Mahumane",
+        date: "20 de Janeiro de 2025",
+        description:
+          "Profissional formada em contabilidade e apaixonada por trabalhar com números e pessoas. Com mais de 02 anos de experiência na área de atendimento e gestão de clientes, contabilidade financeira e de custos.",
+        authorPhoto: author,
+      },
+    ],
     titulo:
       "5 Estratégias Simples para Pequenas Empresas Africanas Aumentarem a Produtividade",
     conteudo: [
@@ -43,6 +53,15 @@ const data = [
     categoria: "Finanças para PMEs",
     link: "Finanças-para-PMEs",
     photo: blog2,
+    author: [
+      {
+        name: "Elónia Mahumane",
+        date: "20 de Janeiro de 2025",
+        description:
+          "Profissional formada em contabilidade e apaixonada por trabalhar com números e pessoas. Com mais de 02 anos de experiência na área de atendimento e gestão de clientes, contabilidade financeira e de custos.",
+        authorPhoto: author,
+      },
+    ],
     titulo:
       "Como Controlar o Fluxo de Caixa e Evitar Surpresas Financeiras na África",
     conteudo: [
@@ -77,6 +96,15 @@ const data = [
     categoria: "Marketing Digital",
     link: "Marketing-Digital",
     photo: blog3,
+    author: [
+      {
+        name: "Elónia Mahumane",
+        date: "20 de Janeiro de 2025",
+        description:
+          "Profissional formada em contabilidade e apaixonada por trabalhar com números e pessoas. Com mais de 02 anos de experiência na área de atendimento e gestão de clientes, contabilidade financeira e de custos.",
+        authorPhoto: author,
+      },
+    ],
     titulo:
       "Marketing Digital para PMEs Africanas: Como Começar com Pouco Orçamento",
     conteudo: [
@@ -110,6 +138,15 @@ const data = [
   {
     categoria: "Liderança e Gestão de Pessoas",
     photo: blog4,
+    author: [
+      {
+        name: "Elónia Mahumane",
+        date: "20 de Janeiro de 2025",
+        description:
+          "Profissional formada em contabilidade e apaixonada por trabalhar com números e pessoas. Com mais de 02 anos de experiência na área de atendimento e gestão de clientes, contabilidade financeira e de custos.",
+        authorPhoto: author,
+      },
+    ],
     link: "Liderança-e-Gestão-de-Pessoas",
     titulo: "Como Motivar Sua Equipe Mesmo em Tempos de Crise na África",
     conteudo: [
@@ -144,6 +181,15 @@ const data = [
     categoria: "Tecnologia e Inovação",
     link: "Tecnologia-e-inovação",
     photo: blog5,
+    author: [
+      {
+        name: "Elónia Mahumane",
+        date: "20 de Janeiro de 2025",
+        description:
+          "Profissional formada em contabilidade e apaixonada por trabalhar com números e pessoas. Com mais de 02 anos de experiência na área de atendimento e gestão de clientes, contabilidade financeira e de custos.",
+        authorPhoto: author,
+      },
+    ],
     titulo:
       "Ferramentas Tecnológicas Que Toda Pequena Empresa Africana Deve Conhecer",
     conteudo: [

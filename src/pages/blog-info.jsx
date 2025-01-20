@@ -7,6 +7,7 @@ import data from "../data";
 import { SocialMidia } from "../components/social-midia";
 import { AuthorCard } from "../components/card-author";
 import { useParams } from "react-router-dom";
+import { Footer } from "../components/footer";
 
 export const BlogInfo = () => {
   const { id } = useParams();
@@ -29,11 +30,11 @@ export const BlogInfo = () => {
           photo={content.photo || photo}
           title={content.titulo}
           category={content.categoria}
-          author={"Mahumane"}
-          data={"28 de outubro de 2024"}
+          author={content.author[0].name}
+          data={content.author[0].date}
         />
       </section>
-      <section className="mx-auto space-y-20 max-w-7xl py-14">
+      <section className="mx-auto space-y-20 px-6 max-w-7xl py-14">
         <div>
           <div className="flex gap-4">
             <a
@@ -80,14 +81,13 @@ export const BlogInfo = () => {
         </div>
         <div className="w-full flex justify-center">
           <AuthorCard
-            author={"Mahumane"}
-            description={
-              "lol  dcjdnkwmkedee fccjckmkcemefe fekkfemoejsgierguirwg rebg vje vjenfwieor0woefi fanefew fjnfioewnwe jk"
-            }
-            photo={author}
+            author={content.author[0].name}
+            description={content.author[0].description}
+            photo={content.author[0].authorPhoto}
           />
         </div>
       </section>
+      <Footer />
       <SocialMidia />
     </>
   );

@@ -1,6 +1,6 @@
 export const AuthorCard = ({ photo, author, description }) => {
   return (
-    <div className="md:w-[40rem] w-96 flex md:flex-row flex-col items-center space-x-6">
+    <div className="md:w-[40rem] w-full flex md:flex-row flex-col items-center space-x-6">
       <div>
         <div className="w-28 h-full flex items-center">
           {" "}

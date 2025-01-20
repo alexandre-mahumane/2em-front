@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "main-blue": "rgba(5, 141, 196, 0.21)", // 058DC4 com 21% de opacidade
+        "main-blue-100": "rgba(5, 141, 196, 0.67)", // 058DC4 com 21% de opacidade
         "link-text": "#058DC4", // Azul puro sem opacidade
         "footer-background": "#515050", // Cinza escuro do footer
         "blue-bar": "#058DC4",
