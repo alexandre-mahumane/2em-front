@@ -28,7 +28,7 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex items-center h-full space-x-8 text-gray-500 text-lg">
+        <ul className="hidden lg:flex items-center h-full space-x-8 text-gray-500 text-xl">
           {links.map((link, index) => (
             <li key={index} className="relative group">
               <NavLink

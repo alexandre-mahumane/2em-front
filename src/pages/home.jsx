@@ -12,11 +12,11 @@ export const Home = () => {
   const valuePropositions = [
     {
       title: "Consultoria Legal e Financeira Personalizada para PMEs Africanas",
-      text: "Na 2 EM Consulting, capacitamos pequenas e médias empresas africanas a alcançar novos patamares de crescimento e estabilidade. Inspirados pela grandiosidade do Monte Kilimanjaro, oferecemos consultoria legal e financeira estratégica, conectando empresas com soluções personalizadas que refletem confiança, profissionalimdo e um profundo entendimento do mercado africano.",
+      text: "Na 2 EM Consulting, capacitamos pequenas e médias empresas africanas a alcançar novos patamares de crescimento e estabilidade. Inspirados pela grandiosidade do Monte Kilimanjaro, oferecemos consultoria legal e financeira estratégica.",
     },
     {
       title: "Elevando o Potencial das PMEs Africanas",
-      text: "A 2 EM Consulting é mais do que uma consultoria – somos parceiros estratégicos que impulsionam o crescimento sustentável de PMEs no continente africano. Oferecemos serviços especializados em assessoria legal, financeira e treinamento, ajudando empresas a navegar no cenário empresarial com segurança e assertividade. Nossa essência se traduz em confiança, experiência e conexão local.",
+      text: "A 2 EM Consulting é mais do que uma consultoria – somos parceiros estratégicos que impulsionam o crescimento sustentável de PMEs no continente africano.",
     },
   ];
 

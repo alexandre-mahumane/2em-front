@@ -20,7 +20,7 @@ export const AboutUs = () => {
     },
     {
       title: "Valores",
-      text: "Agimos com transparência e ética em todas as relações buscando sempre os mais altos padrões de qualidade nos serviços prestados trabalhamos em parceria com os clientes para encontrar as melhores soluções promovendo ideias criativas e estratégias que gerem valor real e contribuindo para o desenvolvimento social e econômico das comunidades atendidas",
+      text: "Agimos com transparência e ética em todas as relações buscando sempre os mais altos padrões de qualidade nos serviços prestados.",
       delay: 1.5,
     },
   ];

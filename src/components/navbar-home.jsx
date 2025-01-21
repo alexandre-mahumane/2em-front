@@ -42,7 +42,7 @@ export const Navbar = ({ scroll }) => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex items-center space-x-10 text-lg">
+        <ul className="hidden lg:flex items-center space-x-10 text-xl">
           {links.map((link, index) => (
             <li key={index} className="flex flex-col items-center">
               <NavLink
