@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import photo from "../assets/photo4.jpg";
+import photo from "../assets/photo5.jpg";
 import { motion } from "motion/react";
 export const CardCompany = () => {
   return (
@@ -14,7 +14,7 @@ export const CardCompany = () => {
             financeiras personalizadas para superar desafios e gerar crescimento
             sustentável. Fundada por Elónia Mahumane e Elcídio Macitela, a
             empresa atua como parceira comprometida em promover prosperidade,
-            com integridade, excelência e inovação como pilares fundamentais.
+            com integridade.
           </p>
         </div>
         <div>

@@ -30,8 +30,20 @@ export const Service = () => {
         <div className="bg-main-blue">
           <section className="mx-auto  px-6 lg:px-0 py-14 w-full max-w-7xl">
             <section className="flex md:flex-row space-y-6 md:space-y-0 flex-col justify-center md:space-x-8">
-              <CardService variant={1} />
-              <CardService variant={2} />
+              <CardService
+                variant={1}
+                service={"GOVERNANÇA"}
+                description={
+                  "Apoio na Estruturação da Governança Corporativa, Estruturação de Conselhos, Secretaria de Governança e Avaliação de Conselhos."
+                }
+              />
+              <CardService
+                variant={2}
+                service={"GESTÃO"}
+                description={
+                  "Apoio à liderança das organizações na elaboração e condução de um modelo de gestão eficaz."
+                }
+              />
             </section>
           </section>
         </div>
@@ -53,10 +65,11 @@ export const Service = () => {
             viewport={{ once: true }}
             className="text-xl"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            necessitatibus aliquid nihil suscipit placeat, nostrum aperiam
-            molestias dignissimos rerum doloribus culpa deserunt veritatis ea at
-            possimus harum. Iste, sint repellat.
+            Estabelecemos uma relação de confiança com nossos clientes e
+            buscamos, de forma conjunta, as melhores soluções para cada
+            situação. Entendemos que cada cliente possui questões particulares,
+            e precisa de soluções específicas. Não existe uma solução única para
+            todos. É isso que faz a diferença.
           </motion.p>
         </section>
       </div>
