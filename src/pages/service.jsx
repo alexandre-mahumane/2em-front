@@ -8,28 +8,28 @@ import { motion } from "motion/react";
 export const Service = () => {
   const data = [
     {
-      service: "Consultoria de Processos Legais",
-      description:
-        "Auxiliamos PMEs na regularização e conformidade legal, garantindo segurança jurídica para operar e crescer.",
-      variant: 1,
+      serviço: "Consultoria de Processos Legais",
+      descrição:
+        "Apoiamos as PME na regularização e conformidade legal, garantindo segurança jurídica para operar e crescer.",
+      variante: 1,
     },
     {
-      service: "Gestão",
-      description:
+      serviço: "Gestão",
+      descrição:
         "Implementamos estratégias para otimizar operações, reduzir custos e melhorar a eficiência empresarial.",
-      variant: 2,
+      variante: 2,
     },
     {
-      service: "Contabilidade",
-      description:
-        "Oferecemos soluções contábeis completas, desde a escrituração até a análise financeira, para manter sua empresa saudável.",
-      variant: 1,
+      serviço: "Contabilidade",
+      descrição:
+        "Oferecemos soluções contabilísticas completas, desde a escrituração até à análise financeira, para manter a sua empresa saudável.",
+      variante: 1,
     },
     {
-      service: "Marketing e Vendas",
-      description:
-        "Desenvolvemos estratégias eficazes para aumentar a visibilidade da sua marca e impulsionar suas vendas.",
-      variant: 2,
+      serviço: "Marketing e Vendas",
+      descrição:
+        "Desenvolvemos estratégias eficazes para aumentar a visibilidade da sua marca e impulsionar as suas vendas.",
+      variante: 2,
     },
   ];
 
