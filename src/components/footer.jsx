@@ -13,7 +13,7 @@ export const Footer = () => {
             A 2 EM Consulting inspira-se no Monte Kilimanjaro para ajudar PMEs
             africanas a alcançarem o sucesso, oferecendo soluções legais e
             financeiras personalizadas para superar desafios e gerar crescimento
-            sustentável. Fundada por Elónia Mahumane e Elcídio Macitela...
+            sustentável...
           </p>
           <Link
             className="text-link-text font-medium flex items-center space-x-2"

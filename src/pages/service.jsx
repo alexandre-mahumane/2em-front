@@ -6,6 +6,33 @@ import { Navbar } from "../components/navbar";
 import { SocialMidia } from "../components/social-midia";
 import { motion } from "motion/react";
 export const Service = () => {
+  const data = [
+    {
+      service: "Consultoria de Processos Legais",
+      description:
+        "Auxiliamos PMEs na regularização e conformidade legal, garantindo segurança jurídica para operar e crescer.",
+      variant: 1,
+    },
+    {
+      service: "Gestão",
+      description:
+        "Implementamos estratégias para otimizar operações, reduzir custos e melhorar a eficiência empresarial.",
+      variant: 2,
+    },
+    {
+      service: "Contabilidade",
+      description:
+        "Oferecemos soluções contábeis completas, desde a escrituração até a análise financeira, para manter sua empresa saudável.",
+      variant: 1,
+    },
+    {
+      service: "Marketing e Vendas",
+      description:
+        "Desenvolvemos estratégias eficazes para aumentar a visibilidade da sua marca e impulsionar suas vendas.",
+      variant: 2,
+    },
+  ];
+
   const renderMotion = (delay) => ({
     hidden: {
       opacity: 0,
@@ -29,21 +56,17 @@ export const Service = () => {
       <div className="space-y-10 md:space-y-40">
         <div className="bg-main-blue">
           <section className="mx-auto  px-6 lg:px-0 py-14 w-full max-w-7xl">
-            <section className="flex md:flex-row space-y-6 md:space-y-0 flex-col justify-center md:space-x-8">
-              <CardService
-                variant={1}
-                service={"GOVERNANÇA"}
-                description={
-                  "Apoio na Estruturação da Governança Corporativa, Estruturação de Conselhos, Secretaria de Governança e Avaliação de Conselhos."
-                }
-              />
-              <CardService
-                variant={2}
-                service={"GESTÃO"}
-                description={
-                  "Apoio à liderança das organizações na elaboração e condução de um modelo de gestão eficaz."
-                }
-              />
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-6 md:space-y-0 flex-col justify-center ">
+              {data.map((item) => (
+                <div>
+                  <CardService
+                    variant={item.variant}
+                    description={item.description}
+                    service={item.service}
+                    key={item.service}
+                  />
+                </div>
+              ))}
             </section>
           </section>
         </div>

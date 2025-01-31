@@ -6,7 +6,7 @@ export const CardCompany = () => {
   return (
     <div className="flex md:flex-row space-y-6 md:space-y-0 mx-auto w-full max-w-7xl flex-col items-center">
       <div className="bg-main-blue justify-between md:relative flex flex-col md:mr-32  md:w-2/3 px-6 md:px-32 py-8 md:h-[25rem]">
-        <div className="md:w-4/5 w-full">
+        <div className="md:w-4/5 w-full md:space-y-0 space-y-4">
           <h3 className="font-semibold text-5xl">Sobre a Empresa</h3>
           <p className="text-xl">
             A 2 EM Consulting inspira-se no Monte Kilimanjaro para ajudar PMEs

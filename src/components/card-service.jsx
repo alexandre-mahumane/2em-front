@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+
 export const CardService = ({ variant, service, description }) => {
   return (
     <motion.div
@@ -10,14 +11,13 @@ export const CardService = ({ variant, service, description }) => {
         ease: "easeIn",
       }}
       viewport={{ once: true }}
-      className={`shadow-lg flex space-y-14 flex-col w-full lg:w-1/2 p-8 md:px-14 lg:h-96 ${
-        variant == 1 && "bg-sky-900 text-white"
-      }  ${variant == 2 && "bg-white text-sky-900"}`}
+      className={`shadow-lg flex flex-col  w-full p-6 md:p-10 h-96 md:h-96 lg:p-14 lg:gap-10 
+        ${variant == 1 ? "bg-sky-900 text-white" : "bg-white text-sky-900"}`}
     >
-      <p className="">Serviço</p>
-      <div className="space-y-4">
-        <h3 className="font-semibold text-5xl">{service}</h3>
-        <p className="text-xl">{description}</p>
+      <p className="text-lg md:text-xl font-medium">Serviço</p>
+      <div className="space-y-3 mt-10 md:mt-0 md:space-y-5 lg:space-y-6 max-w-lg ">
+        <h3 className="font-semibold text-4xl md:text-5xl">{service}</h3>
+        <p className="text-lg md:text-xl">{description}</p>
       </div>
     </motion.div>
   );
